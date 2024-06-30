@@ -24,3 +24,23 @@ fn main() {
     println!("The answer of median([1.0, 2.0, 5.0]) = {:?}", answer);
 }
 
+// Test cases from the course
+#[test]
+fn empty_list() {
+    assert_eq!(median(vec![]), None);
+}
+
+#[test]
+fn sorted_list() {
+    assert_eq!(median(vec![1.0, 4.0, 5.0]), Some(4.0));
+}
+
+#[test]
+fn unsorted_list() {
+    assert_eq!(median(vec![3.0, 6.0, 2.0, 7.0, 5.0]), Some(5.0));
+}
+
+#[test]
+fn even_length() {
+    assert_eq!(median(vec![2.0, 1.0, 4.0, 5.0]), Some(3.0));
+}
