@@ -2,3 +2,6 @@
 authors = ["Tim McNamara <tim@mcnamara.nz>"]
 name = "hello_rust_learners"
 version = "0.1.0"
+
+[dependencies]
+chrono = "0.4"
